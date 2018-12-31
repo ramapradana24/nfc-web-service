@@ -35,6 +35,7 @@ class MahasiswaController extends Controller
      */
     public function store(Request $r)
     {
+        return $r;
         $validator = Validator::make($r->all(), [
             "nim" => "required",
             "nama" => "required",
