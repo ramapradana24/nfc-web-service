@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\mahasiswa;
 use Illuminate\Http\Request;
 use Validator;
+use App\Ortu;
 
 class MahasiswaController extends Controller
 {
