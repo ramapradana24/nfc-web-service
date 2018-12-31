@@ -237,7 +237,6 @@ class JadwalController extends Controller
 
         $toJadwal = [];
         foreach($absenMhs as $mhs){
-            return $mhs->ortu->fcm;
             $data = [
                 'mahasiswa_id'  => $mhs->id_mhs,
                 'jadwal_id'     => $request->id_jadwal,
