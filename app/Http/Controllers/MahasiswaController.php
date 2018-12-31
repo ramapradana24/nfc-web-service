@@ -24,6 +24,17 @@ class MahasiswaController extends Controller
      */
     public function create()
     {
+        
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
         $validator = Validator::make($r->all(), [
             "nim" => "required",
             "nama" => "required",
@@ -61,17 +72,6 @@ class MahasiswaController extends Controller
                 "pesan" => "Mahasiswa dengan NIM atau RFID tersebut sudah ada"
             ], 500);
         }
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
     }
 
     /**
