@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\mahasiswa;
 use Illuminate\Http\Request;
+use Validator;
 
 class MahasiswaController extends Controller
 {
@@ -35,7 +36,6 @@ class MahasiswaController extends Controller
      */
     public function store(Request $r)
     {
-        return $r;
         $validator = Validator::make($r->all(), [
             "nim" => "required",
             "nama" => "required",
